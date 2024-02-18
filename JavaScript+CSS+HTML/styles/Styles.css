@@ -1,0 +1,127 @@
+* { box-sizing: border-box; }
+body {
+    font: 16px Arial;
+  /*background-image: url("./images/weather_background.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;*/
+}
+.weathercard{
+  width: 230px;
+  height: 400px;
+  background-color: black;
+  color: white;
+  font-size: 10px;
+  float: left;
+  margin-top: 70px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#weathercard_0{
+  background-image: url("./images/clear_sky.jfif");/*link imagine:https://www.freepik.com/free-photos-vectors/clear-sky*/
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#weathercard_1{
+  background-image: url("./images/mostly_clear_sky.jpg");/*link imagine:https://www.istockphoto.com/ro/fotografii/mostly-cloudy-sky*/
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#weathercard_2{
+  background-image: url("./images/partialy_cloudy.jfif");/*link imagine:https://www.istockphoto.com/ro/fotografii/partly-cloudy-sky*/
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#weathercard_3{
+  background-image: url("./images/mostly_cloudy.jfif");/*link imagine:https://eu.thetimesherald.com/story/news/local/2015/08/11/weather-mostly-cloudy-high/31449941/*/
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#weathercard_4{
+  background-image: url("./images/light_rain.jfif");/*link imagine:https://unsplash.com/s/photos/light-rain*/
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#weathercard_5{
+  background-image: url("./images/heavy_rain.jfif");/*link imagine:https://www.dreamstime.com/photos-images/heavy-rain.html*/
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#weathercard_6{
+  background-image: url("./images/lightning_storm.jfif");/*link imagine:https://sarahhobdaycounselling.com/2018/08/01/stormy-weather-and-headaches/*/
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#weathercard_7{
+  background-image: url("./images/fog.jfif"); /*link imagine:https://www.google.com/imgres?imgurl=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1510596713412-56030de252c8%3Fixlib%3Drb-4.0.3%26ixid%3DMnwxMjA3fDB8MHxzZWFyY2h8M3x8Zm9nfGVufDB8fDB8fA%253D%253D%26w%3D1000%26q%3D80&imgrefurl=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Ffog&tbnid=OUJK1aDV4SMzYM&vet=12ahUKEwj-xafJ9bX8AhVAybsIHapyCtIQMygAegUIARDDAQ..i&docid=ncLBgoRqobR4nM&w=1000&h=1500&q=fog%20images&ved=2ahUKEwj-xafJ9bX8AhVAybsIHapyCtIQMygAegUIARDDAQ*/
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+.weathercard #date{
+  margin-top: 0px;
+  margin-left: 1px;
+  float: left;
+}
+.weathercard #city{
+  margin-top: 0px;
+  margin-right: 1px;
+  float: right;
+}
+.weathercard #degree{
+  text-align: center;
+  font-size: 30px;
+  line-height: 2px;
+}
+.weathercard #humidity{
+  text-align: center;
+  font-size: 10px;
+}
+.weathercard #sky_conditions{
+  text-align: center;
+  margin-top: 100px;
+  font-size: 20px;
+}
+.autocomplete {
+    width:300px;
+    position: relative;
+    left: 450px;
+    display: inline-block;
+}
+input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+}
+input[type=text]#myInput {
+  background-color: #f1f1f1;
+  width: 100%;
+}
+input[type=button] {
+  background-color: DodgerBlue;
+  color: #fff;
+  position: relative;
+  left: 450px
+}
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+.autocomplete-items div:hover {
+  background-color: #e9e9e9;
+}
+.autocomplete-active {
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}
